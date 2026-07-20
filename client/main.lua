@@ -4,10 +4,10 @@ CreateThread(function()
     while not NetworkIsSessionStarted() do
         Wait(100)
     end
-    TriggerServerEvent("gr-shellspawner:requestShells")
+    TriggerServerEvent("ShitDevScripts-shellspawner:requestShells")
 end)
 
-RegisterNetEvent("gr-shellspawner:spawnShells", function(shells)
+RegisterNetEvent("ShitDevScripts-shellspawner:spawnShells", function(shells)
     for _, shell in ipairs(shells) do
         local model = GetHashKey(shell.model)
         RequestModel(model)
@@ -24,7 +24,7 @@ RegisterNetEvent("gr-shellspawner:spawnShells", function(shells)
     end
 end)
 
-RegisterNetEvent("gr-shellspawner:clearShells", function()
+RegisterNetEvent("ShitDevScripts-shellspawner:clearShells", function()
     for _, obj in ipairs(spawnedShells) do
         if DoesEntityExist(obj) then
             DeleteObject(obj)
