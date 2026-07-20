@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'GR-Scripts'
+author 'ShitDevScripts'
 description 'Shell Spawner for QBCore'
 version '1.0.1'
 
