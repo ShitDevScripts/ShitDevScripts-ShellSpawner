@@ -13,7 +13,7 @@ AddEventHandler("onResourceStop", function(resourceName)
     end
 end)
 
-RegisterNetEvent("gr-shellspawner:requestShells", function()
+RegisterNetEvent("ShitDevScripts-shellspawner:requestShells", function()
     local src = source
-    TriggerClientEvent("gr-shellspawner:spawnShells", src, Config.Shells)
+    TriggerClientEvent("ShitDevScripts-shellspawner:spawnShells", src, Config.Shells)
 end)
